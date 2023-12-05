@@ -152,19 +152,19 @@ public class SnakeApplication extends Application  {
         switch (dir) {
             case 0:
                 if (headloc[1] + 20 <= 520) headloc[1] += 20;
-                else headloc[1] = 0;
+                else headloc[1] = size;
                 break;
             case 1:
                 if (headloc[0] - 20 >= 0) headloc[0] -= 20;
-                else headloc[0] = 520;
+                else headloc[0] = 520 - size;
                 break;
             case 2:
                 if (headloc[1] - 20 >= 0) headloc[1] -= 20;
-                else headloc[1] = 520;
+                else headloc[1] = 520 - size;
                 break;
             case 3:
                 if (headloc[0] + 20 <= 520) headloc[0] += 20;
-                else headloc[0] = 0;
+                else headloc[0] = size;
                 break;
         }
 
