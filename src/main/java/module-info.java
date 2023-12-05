@@ -13,4 +13,7 @@ module com.khabibullina.snake {
 
     opens com.khabibullina.snake to javafx.controls;
     exports com.khabibullina.snake;
+
+    opens com.khabibullina.fx.bot to javafx.controls;
+    exports com.khabibullina.fx.bot;
 }
